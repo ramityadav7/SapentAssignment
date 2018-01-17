@@ -50,10 +50,7 @@ public class HomeListActivity extends BaseActivity implements HomeView{
     private void initializeView()
     {
         homeData = new HomeData();
-        HomeDataItem homeDataItem = new HomeDataItem();
-        homeDataItem.setFormattedString("sample string");
         List<HomeDataItem> homeDataItems = new ArrayList<>();
-        homeDataItems.add(homeDataItem);
         homeData.setData(homeDataItems);
         homeAdapter = new HomeAdapter(homeDataItems);
 
